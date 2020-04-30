@@ -4,12 +4,15 @@ from webbot import Browser
 # run automation to login github automaticly 
 # without typing usrname and psw
 
+# webbot is super easy to do the automation
+# only down side is only supporting google chrome
 def openUrl(url):
 	try:
 		
 		web = Browser()
 		web.go_to(url)
 		return web
+
 	except:
 		return "Not valid website" 
 
@@ -33,5 +36,3 @@ if __name__ == "__main__":
 	bot = openUrl(url)
 	loginCredencial(usrName,psw,bot)
 	bot.close_current_tab()
-	
-
