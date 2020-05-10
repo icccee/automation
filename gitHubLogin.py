@@ -1,6 +1,5 @@
 from webbot import Browser
 
-# this is a funny programm 
 # run automation to login github automaticly 
 # without typing usrname and psw
 
@@ -35,4 +34,4 @@ if __name__ == "__main__":
 	psw = 'password'
 	bot = openUrl(url)
 	loginCredencial(usrName,psw,bot)
-	bot.close_current_tab()
+	#bot.close_current_tab()
